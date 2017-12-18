@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">QuizzApp</string>
+    <string name="app_name">French Gastronomy Quizz</string>
+    <string name="name">Name</string>
+    <string name="frenchFlagDescription">A french flag</string>
+    <string name="q1">With which cheeses the fondue savoyarde is prepared ?</string>
+    <string name="q1c1">Comté</string>
+    <string name="q1c2">Beaufort</string>
+    <string name="q1c3">Camenbert</string>
+    <string name="q1c4">Emmental</string>
+    <string name="bonAppetit">Bon appétit!</string>
+    <string name="plate">A plate</string>
+    <string name="one">1</string>
+
 </resources>

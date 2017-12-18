@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="leftRightMargin">16dp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="headerSize">24sp</dimen>
+    <dimen name="leftRightPadding">5dp</dimen>
+    <dimen name="radius">50dp</dimen>
+    <dimen name="checkBoxPadding">16dp</dimen>
+</resources>
