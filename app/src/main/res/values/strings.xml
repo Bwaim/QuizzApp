@@ -2,13 +2,86 @@
     <string name="app_name">French Gastronomy Quizz</string>
     <string name="name">Name</string>
     <string name="frenchFlagDescription">A french flag</string>
-    <string name="q1">With which cheeses the fondue savoyarde is prepared ?</string>
+    <string name="bonAppetit">Bon appétit!</string>
+    <string name="plate">A plate</string>
+
+    <!-- question 1 -->
+    <string name="one">1</string>
+    <string name="q1">With which cheeses the fondue savoyarde is prepared?</string>
     <string name="q1c1">Comté</string>
     <string name="q1c2">Beaufort</string>
     <string name="q1c3">Camenbert</string>
     <string name="q1c4">Emmental</string>
-    <string name="bonAppetit">Bon appétit!</string>
-    <string name="plate">A plate</string>
-    <string name="one">1</string>
 
+    <!-- question 2 -->
+    <string name="two">2</string>
+    <string name="q2">Where the choucroute come from?</string>
+    <string name="q2c1">Aquitaine</string>
+    <string name="q2c2">Midi Pyrénée</string>
+    <string name="q2c3">Alsace</string>
+    <string name="q2c4">Auvergne</string>
+
+    <!-- question 3 -->
+    <string name="three">3</string>
+    <string name="q3">What compose the macaron?</string>
+    <string name="q3c1">Almond powder</string>
+    <string name="q3c2">Icing sugar</string>
+    <string name="q3c3">Sugar</string>
+    <string name="q3c4">Egg whites</string>
+
+    <!-- question 4 -->
+    <string name="four">4</string>
+    <string name="q4">What name is the sparkling wine produced around the city of Reims?</string>
+    <string name="q4c1">The champagne</string>
+    <string name="q4c2">The clairette of Dié</string>
+    <string name="q4c3">The crémant</string>
+    <string name="q4c4">The wine of Seyssel</string>
+
+    <!-- question 5 -->
+    <string name="five">5</string>
+    <string name="q5">What is the symbol of the French breakfast?</string>
+    <string name="q5c1">The bread</string>
+    <string name="q5c2">The croissant</string>
+    <string name="q5c3">The ham</string>
+    <string name="q5c4">The cheese</string>
+
+    <!-- question 6 -->
+    <string name="six">6</string>
+    <string name="q6">Who do you ask for advice on choosing wine at the restaurant?</string>
+    <string name="q6c1">To the grower</string>
+    <string name="q6c2">To the wine waiter</string>
+    <string name="q6c3">To the oenologist</string>
+    <string name="q6c4">To the cellar master</string>
+
+    <!-- question 7 -->
+    <string name="seven">7</string>
+    <string name="q7">What part of the body refers to the word "gastronomy"?</string>
+    <string name="q7c1">The mouth</string>
+    <string name="q7c2">The palate</string>
+    <string name="q7c3">The stomach</string>
+    <string name="q7c4">The tongue</string>
+
+    <!-- question 8 -->
+    <string name="eight">8</string>
+    <string name="q8">What Breton speciality is prepared with eggs, flour and milk?</string>
+    <string name="q8c1">The crepe</string>
+    <string name="q8c2">The aligot</string>
+    <string name="q8c3">The Paris-Brest</string>
+    <string name="q8c4">The sablé</string>
+
+    <!-- question 9 -->
+    <string name="nine">9</string>
+    <string name="q9">What traditional dish is served in France on Christmas Eve?</string>
+    <string name="q9c1">The brown Turkey</string>
+    <string name="q9c2">The cep omelette</string>
+    <string name="q9c3">The fried carp</string>
+    <string name="q9c4">The duck with orange</string>
+
+    <!-- question 10 -->
+    <string name="ten">10</string>
+    <string name="q10">What is the appellation of origin of Châteauneuf-du-Pape wine?</string>
+    <string name="q10c1">Bordeaux</string>
+    <string name="q10c2">Bourgogne</string>
+    <string name="q10c3">Languedoc</string>
+    <string name="q10c4">côtes-du-Rhône</string>
 </resources>
