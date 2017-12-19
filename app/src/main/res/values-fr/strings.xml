@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quizz Gastronomie Française</string>
+    <string name="name">Nom</string>
+    <string name="frenchFlagDescription">Un drapeau français</string>
+    <string name="plate">Une assiette</string>
+    <string name="q1">Avec quels fromages la fondue savoyarde est préparée?</string>
+    <string name="q2">D\'où vient la choucroute?</string>
+    <string name="q3">Qu\'est ce qui compose les macarons?</string>
+    <string name="q3c1">Poudre d\'amande</string>
+    <string name="q3c2">Sucre glace</string>
+    <string name="q3c3">Sucre</string>
+    <string name="q3c4">Blancs d\'oeufs</string>
+    <string name="q4">Quel nom porte le vin pétillant produit autour de la ville de Reims?</string>
+    <string name="q4c1">Le champagne</string>
+    <string name="q4c2">La clairette de Dié</string>
+    <string name="q4c3">Le crémant</string>
+    <string name="q4c4">Le vin de Seyssel</string>
+    <string name="q5">Quel est le symbole du petit déjeuner français?</string>
+    <string name="q5c1">Le pain</string>
+    <string name="q5c2">Le croissant</string>
+    <string name="q5c3">Le jambon</string>
+    <string name="q5c4">Le fromage</string>
+    <string name="q6">À qui demandez-vous conseil pour choisir un vin au restaurant?</string>
+    <string name="q6c1">Au viticulteur</string>
+    <string name="q6c2">Au sommelier</string>
+    <string name="q6c3">A  l\'oenologue</string>
+    <string name="q6c4">Au maître de chai</string>
+    <string name="q7">À quelle partie du corps fait référence le mot \"gastronomie\"?</string>
+    <string name="q7c1">La bouche</string>
+    <string name="q7c2">Le palais</string>
+    <string name="q7c3">L\'estomac</string>
+    <string name="q7c4">La langue</string>
+    <string name="q8">Quelle spécialité bretonne se prépare à base d\'œufs, de farine et de lait?</string>
+    <string name="q8c1">La crêpe</string>
+    <string name="q8c2">L\'aligot</string>
+    <string name="q8c3">Le Paris-Brest</string>
+    <string name="q8c4">Le sablé</string>
+    <string name="q9">Quel plat traditionnel sert-on en France le soir de Noël?</string>
+    <string name="q9c1">La dinde aux marrons</string>
+    <string name="q9c2">L\'omelette aux cèpes</string>
+    <string name="q9c3">La carpe poêlée</string>
+    <string name="q9c4">Le canard à l\'orange</string>
+</resources>
