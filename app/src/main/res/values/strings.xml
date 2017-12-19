@@ -78,10 +78,10 @@
     <string name="q9c4">The duck with orange</string>
 
     <!-- question 10 -->
-    <string name="ten">10</string>
+    <string name="ten" translatable="false">10</string>
     <string name="q10">What is the appellation of origin of Châteauneuf-du-Pape wine?</string>
-    <string name="q10c1">Bordeaux</string>
-    <string name="q10c2">Bourgogne</string>
-    <string name="q10c3">Languedoc</string>
-    <string name="q10c4">côtes-du-Rhône</string>
+    <string name="q10c1" translatable="false">Bordeaux</string>
+    <string name="q10c2" translatable="false">Bourgogne</string>
+    <string name="q10c3" translatable="false">Languedoc</string>
+    <string name="q10c4" translatable="false">côtes-du-Rhône</string>
 </resources>
