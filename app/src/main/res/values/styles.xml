@@ -14,12 +14,18 @@
         <!-- Override the default styles -->
         <item name="editTextStyle">@style/editText</item>
         <item name="checkboxStyle">@style/checkBox</item>
+        <item name="buttonStyle">@style/button</item>
     </style>
 
     <!-- EditText style -->
     <style name="editText" parent="Widget.AppCompat.EditText">
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textSize">@dimen/headerSize</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <!-- CheckBox style -->

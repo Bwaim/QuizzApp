@@ -4,6 +4,7 @@
     <string name="frenchFlagDescription">A french flag</string>
     <string name="bonAppetit" translatable="false">Bon appétit!</string>
     <string name="plate">A plate</string>
+    <string name="send">send</string>
 
     <!-- question 1 -->
     <string name="one" translatable="false">1</string>
