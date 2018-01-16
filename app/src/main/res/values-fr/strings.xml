@@ -43,4 +43,5 @@
     <string name="q9c4">Le canard à l\'orange</string>
     <string name="q10">Quelle est l\'appellation d\'origine du vin de Châteauneuf-du-Pape?</string>
     <string name="send">Envoyer</string>
+    <string name="usernameEmpty">Pouvez-vous renseigner votre nom</string>
 </resources>

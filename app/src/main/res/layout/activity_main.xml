@@ -49,6 +49,7 @@
                     android:textSize="@dimen/headerSize" />
 
                 <EditText
+                    android:id="@+id/usernameEditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -625,6 +626,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/sendButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/send" />
