@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -72,7 +73,19 @@ public class MainActivity extends AppCompatActivity {
     private int checkAnswers() {
         int nbRightAnswers = 0;
 
+        // Question 1
         if (checkAnswerCheckBox(1, new boolean[]{true, true, false, true})) {
+            nbRightAnswers++;
+        }
+
+        // Question 2
+        if (checkAnswerRadioButton(2,
+                getResources().getIdentifier("q2c4", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 3
+        if (checkAnswerCheckBox(3, new boolean[]{true, true, true, true})) {
             nbRightAnswers++;
         }
 
@@ -117,6 +130,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return answerRight;
+    }
+
+    /**
+     * check if the answer of the question questionNumber is right
+     *
+     * @param questionNumber the number of the question
+     * @param idRightAnswer  the View id of the right answer
+     * @return true if the answer is correct, else false
+     */
+    private boolean checkAnswerRadioButton(int questionNumber, int idRightAnswer) {
+        String radioGroupName = "q" + questionNumber;
+        int radioGroupId = getResources().getIdentifier(radioGroupName, "id", getPackageName());
+        RadioGroup radioGroup = findViewById(radioGroupId);
+
+        return radioGroup.getCheckedRadioButtonId() == idRightAnswer;
     }
 
 }
