@@ -5,6 +5,8 @@
     <string name="bonAppetit" translatable="false">Bon appétit!</string>
     <string name="plate">A plate</string>
     <string name="send">send</string>
+    <string name="usernameEmpty">Can you please fill your name</string>
+    <string name="resultMessage">Congratulations %1$s!\nYou have %2$d right(s) answers on %3$d</string>
 
     <!-- question 1 -->
     <string name="one" translatable="false">1</string>
@@ -85,5 +87,5 @@
     <string name="q10c2" translatable="false">Bourgogne</string>
     <string name="q10c3" translatable="false">Languedoc</string>
     <string name="q10c4" translatable="false">côtes-du-Rhône</string>
-    <string name="usernameEmpty">Can you please fill your name</string>
+
 </resources>
