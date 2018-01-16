@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
     private int checkAnswers() {
         int nbRightAnswers = 0;
 
+        if (checkAnswerCheckBox(1, new boolean[]{true, true, false, true})) {
+            nbRightAnswers++;
+        }
+
         return nbRightAnswers;
     }
 
@@ -88,6 +93,30 @@ public class MainActivity extends AppCompatActivity {
         TextView view = toast.getView().findViewById(android.R.id.message);
         if (view != null) view.setGravity(Gravity.CENTER);
         toast.show();
+    }
+
+    /**
+     * check if the answer of the question questionNumber is right
+     *
+     * @param questionNumber the number of the question
+     * @param rightWrongTab  tab with the correct answer of the question
+     * @return true if the answer is correct, else false
+     */
+    private boolean checkAnswerCheckBox(int questionNumber, boolean[] rightWrongTab) {
+        boolean answerRight = true;
+
+        // iterate on the choice while the answer is right
+        for (int i = 1; i <= rightWrongTab.length && answerRight; ++i) {
+            // get dynamically the view
+            String resourceName = "q" + questionNumber + "c" + i;
+            int id = getResources().getIdentifier(resourceName, "id", getPackageName());
+            CheckBox cbx = findViewById(id);
+
+            // check if the checkbox is on the right state
+            answerRight = cbx.isChecked() == rightWrongTab[i - 1];
+        }
+
+        return answerRight;
     }
 
 }
