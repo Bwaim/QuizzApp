@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
          */
         @Override
         public void onClick(View view) {
+
+            if (isUsernameFilled()) {
+
+            } else {
+                Toast.makeText(getApplicationContext(), R.string.usernameEmpty, Toast.LENGTH_SHORT).show();
+            }
 
         }
     };
@@ -37,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
 
         // Define the callbacks
         sendButton.setOnClickListener(onClickListener);
+    }
+
+    /**
+     * Check if the username is filled or not
+     *
+     * @return true if the username is not empty
+     */
+    private boolean isUsernameFilled() {
+        String username = usernameEditText.getText().toString();
+        return !"".equals(username);
     }
 
 }
