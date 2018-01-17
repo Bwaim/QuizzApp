@@ -89,6 +89,48 @@ public class MainActivity extends AppCompatActivity {
             nbRightAnswers++;
         }
 
+        // Question 4
+        if (checkAnswerRadioButton(4,
+                getResources().getIdentifier("q4c1", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 5
+        if (checkAnswerRadioButton(5,
+                getResources().getIdentifier("q5c2", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 6
+        if (checkAnswerRadioButton(6,
+                getResources().getIdentifier("q6c2", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 7
+        if (checkAnswerRadioButton(7,
+                getResources().getIdentifier("q7c3", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 8
+        if (checkAnswerRadioButton(8,
+                getResources().getIdentifier("q8c1", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 9
+        if (checkAnswerRadioButton(9,
+                getResources().getIdentifier("q9c1", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
+        // Question 10
+        if (checkAnswerRadioButton(10,
+                getResources().getIdentifier("q10c4", "id", getPackageName()))) {
+            nbRightAnswers++;
+        }
+
         return nbRightAnswers;
     }
 
