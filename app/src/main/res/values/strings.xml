@@ -87,5 +87,6 @@
     <string name="q10c2" translatable="false">Bourgogne</string>
     <string name="q10c3" translatable="false">Languedoc</string>
     <string name="q10c4" translatable="false">côtes-du-Rhône</string>
+    <string name="reset">Reset</string>
 
 </resources>

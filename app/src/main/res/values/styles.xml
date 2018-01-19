@@ -14,7 +14,10 @@
         <!-- Override the default styles -->
         <item name="editTextStyle">@style/editText</item>
         <item name="checkboxStyle">@style/checkBox</item>
-        <item name="buttonStyle">@style/button</item>
+
+        <!-- Override default attribute -->
+        <item name="android:dividerVertical">@drawable/divider_vertical</item>
+        <item name="android:buttonBarButtonStyle">@style/button</item>
     </style>
 
     <!-- EditText style -->
@@ -24,8 +27,9 @@
     </style>
 
     <!-- Button style -->
-    <style name="button" parent="Widget.AppCompat.Button">
-        <item name="android:textColor">@color/black</item>
+    <style name="button" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorAccent</item>
     </style>
 
     <!-- CheckBox style -->
@@ -35,16 +39,16 @@
 
     <!-- Margin style for the Layout -->
     <style name="quizzMarginLayout">
-        <item name="android:layout_marginTop">@dimen/leftRightMargin</item>
-        <item name="android:layout_marginLeft">@dimen/leftRightMargin</item>
-        <item name="android:layout_marginRight">@dimen/leftRightMargin</item>
+        <item name="android:layout_marginTop">@dimen/defaultMargin</item>
+        <item name="android:layout_marginLeft">@dimen/defaultMargin</item>
+        <item name="android:layout_marginRight">@dimen/defaultMargin</item>
     </style>
 
     <!-- Style for the question number -->
     <style name="numberQuestion">
         <item name="android:background">@drawable/rounded_corner</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:layout_marginRight">@dimen/leftRightMargin</item>
+        <item name="android:layout_marginRight">@dimen/defaultMargin</item>
         <item name="android:paddingLeft">@dimen/leftRightPadding</item>
         <item name="android:paddingRight">@dimen/leftRightPadding</item>
     </style>

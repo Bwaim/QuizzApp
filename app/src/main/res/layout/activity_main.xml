@@ -42,8 +42,8 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/leftRightMargin"
-                    android:layout_marginRight="@dimen/leftRightMargin"
+                    android:layout_marginLeft="@dimen/defaultMargin"
+                    android:layout_marginRight="@dimen/defaultMargin"
                     android:gravity="center_horizontal"
                     android:text="@string/bonAppetit"
                     android:textSize="@dimen/headerSize" />
@@ -80,7 +80,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -130,7 +130,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -187,7 +187,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -237,7 +237,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -294,7 +294,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -351,7 +351,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -408,7 +408,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -465,7 +465,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -522,7 +522,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -579,7 +579,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/leftRightMargin">
+                android:layout_marginBottom="@dimen/defaultMargin">
 
                 <TextView
                     style="@style/numberQuestion"
@@ -628,15 +628,30 @@
         </LinearLayout>
 
         <LinearLayout
+            style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:divider="?android:attr/dividerVertical"
+            android:dividerPadding="@dimen/dividerPadding"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/resetButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/mini"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" />
 
             <Button
                 android:id="@+id/sendButton"
-                android:layout_width="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/mini"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/send" />
 
         </LinearLayout>

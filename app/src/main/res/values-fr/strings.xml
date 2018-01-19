@@ -45,4 +45,5 @@
     <string name="send">Envoyer</string>
     <string name="usernameEmpty">Pouvez-vous renseigner votre nom</string>
     <string name="resultMessage">Félicitations %1$s!\nVous avez %2$d bonnes réponses sur %3$d</string>
+    <string name="reset">Effacer</string>
 </resources>
