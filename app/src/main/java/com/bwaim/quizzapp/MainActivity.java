@@ -16,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int NB_QUESTIONS = 10;
     private EditText m_usernameEditText;
+
     /**
      * The send button listener
      */
-    private View.OnClickListener onClickListener = new View.OnClickListener() {
+    private View.OnClickListener sendOnClickListener = new View.OnClickListener() {
 
         /**
          * Callback for the click on the send button
@@ -39,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * The reset button listener
+     */
+    private View.OnClickListener resetOnClickListener = new View.OnClickListener() {
+        /**
+         * Callback for the click on the reset button
+         * @param view the button clicked
+         */
+        @Override
+        public void onClick(View view) {
+
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,9 +65,11 @@ public class MainActivity extends AppCompatActivity {
         // Get all the needed views
         m_usernameEditText = findViewById(R.id.usernameEditText);
         Button sendButton = findViewById(R.id.sendButton);
+        Button resetButton = findViewById(R.id.resetButton);
 
         // Define the callbacks
-        sendButton.setOnClickListener(onClickListener);
+        sendButton.setOnClickListener(sendOnClickListener);
+        resetButton.setOnClickListener(resetOnClickListener);
     }
 
     /**
