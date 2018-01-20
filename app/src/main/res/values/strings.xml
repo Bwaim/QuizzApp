@@ -88,5 +88,6 @@
     <string name="q10c3" translatable="false">Languedoc</string>
     <string name="q10c4" translatable="false">côtes-du-Rhône</string>
     <string name="reset">Reset</string>
+    <string name="quizzReseted">Quizz reseted!</string>
 
 </resources>

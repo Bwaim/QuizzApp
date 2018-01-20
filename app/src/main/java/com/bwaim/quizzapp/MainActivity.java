@@ -2,6 +2,7 @@ package com.bwaim.quizzapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.SparseIntArray;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -11,6 +12,9 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 displayResult(nbRightAnswers);
 
             } else {
-                Toast.makeText(getApplicationContext(), R.string.usernameEmpty, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.usernameEmpty,
+                        Toast.LENGTH_SHORT).show();
             }
 
         }
@@ -50,6 +55,27 @@ public class MainActivity extends AppCompatActivity {
          */
         @Override
         public void onClick(View view) {
+
+            // Construct a map for questions with checkbox, the key is the question number and the
+            // value is the number of choices
+            SparseIntArray checkboxQuestion = new SparseIntArray();
+            checkboxQuestion.append(1, 4);
+            checkboxQuestion.append(3, 4);
+
+            // Iterate on the map to reset all checkboxes
+            for (int i = 0; i < checkboxQuestion.size(); ++i) {
+                resetCheckBoxQuestion(checkboxQuestion.keyAt(i), checkboxQuestion.valueAt(i));
+            }
+
+            // Construct the list of questions with radioButton
+            List<Integer> radioQuestions = Arrays.asList(2, 4, 5, 6, 7, 8, 9, 10);
+
+            for (Integer questionNumber : radioQuestions) {
+                resetRadioQuestion(questionNumber);
+            }
+
+            Toast.makeText(MainActivity.this, R.string.quizzReseted,
+                    Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -200,10 +226,44 @@ public class MainActivity extends AppCompatActivity {
      */
     private boolean checkAnswerRadioButton(int questionNumber, int idRightAnswer) {
         String radioGroupName = "q" + questionNumber;
-        int radioGroupId = getResources().getIdentifier(radioGroupName, "id", getPackageName());
+        int radioGroupId = getResources().getIdentifier(radioGroupName, "id",
+                getPackageName());
         RadioGroup radioGroup = findViewById(radioGroupId);
 
         return radioGroup.getCheckedRadioButtonId() == idRightAnswer;
     }
 
+    /**
+     * Reset all the checkBox of a question
+     *
+     * @param questionNumber the number of the question to reset
+     * @param choicesNumber  the number of possible choices for the question
+     */
+    private void resetCheckBoxQuestion(int questionNumber, int choicesNumber) {
+
+        // Iterate on all choices to reset it
+        for (int i = 1; i <= choicesNumber; ++i) {
+            // get dynamically the view
+            String resourceName = "q" + questionNumber + "c" + i;
+            int id = getResources().getIdentifier(resourceName, "id", getPackageName());
+            CheckBox cbx = findViewById(id);
+
+            // uncheck the checkBox
+            cbx.setChecked(false);
+        }
+    }
+
+    /**
+     * Reset a question
+     *
+     * @param questionNumber the number of the question to reset
+     */
+    private void resetRadioQuestion(int questionNumber) {
+
+        String radioGroupName = "q" + questionNumber;
+        int radioGroupId = getResources().getIdentifier(radioGroupName, "id",
+                getPackageName());
+        RadioGroup radioGroup = findViewById(radioGroupId);
+        radioGroup.clearCheck();
+    }
 }
