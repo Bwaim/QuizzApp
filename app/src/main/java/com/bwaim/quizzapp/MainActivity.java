@@ -19,8 +19,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final int NB_QUESTIONS = 10;
-    private EditText m_usernameEditText;
-    private EditText m_q10Answer;
+    private EditText myUsernameEditText;
+    private EditText myQ10Answer;
 
     /**
      * The send button listener
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // reset the question 10
-            m_q10Answer.setText("");
+            myQ10Answer.setText("");
 
             Toast.makeText(MainActivity.this, R.string.quizzReseted,
                     Toast.LENGTH_SHORT).show();
@@ -93,8 +93,8 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         // Get all the needed views
-        m_usernameEditText = findViewById(R.id.usernameEditText);
-        m_q10Answer = findViewById(R.id.q10Answer);
+        myUsernameEditText = findViewById(R.id.usernameEditText);
+        myQ10Answer = findViewById(R.id.q10Answer);
         Button sendButton = findViewById(R.id.sendButton);
         Button resetButton = findViewById(R.id.resetButton);
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
      * @return true if the username is not empty
      */
     private boolean isUsernameFilled() {
-        String username = m_usernameEditText.getText().toString();
+        String username = myUsernameEditText.getText().toString();
         return !"".equals(username);
     }
 
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Question 10
-        String answer = m_q10Answer.getText().toString();
+        String answer = myQ10Answer.getText().toString();
         String goodAnswer = getString(R.string.q10Answer);
         if (goodAnswer.equalsIgnoreCase(answer)) {
             nbRightAnswers++;
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
      * @param nbRightAnswers, the number of right answers
      */
     private void displayResult(int nbRightAnswers) {
-        String name = m_usernameEditText.getText().toString();
+        String name = myUsernameEditText.getText().toString();
         String message = getString(R.string.resultMessage, name, nbRightAnswers, NB_QUESTIONS);
 
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_LONG);
