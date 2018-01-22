@@ -5,8 +5,11 @@
     <string name="bonAppetit" translatable="false">Bon appétit!</string>
     <string name="plate">A plate</string>
     <string name="send">send</string>
+    <string name="reset">Reset</string>
     <string name="usernameEmpty">Can you please fill your name</string>
     <string name="resultMessage">Congratulations %1$s!\nYou have %2$d right(s) answers on %3$d</string>
+    <string name="quizzReseted">Quizz reseted!</string>
+    <string name="frenchCity">French City</string>
 
     <!-- question 1 -->
     <string name="one" translatable="false">1</string>
@@ -82,12 +85,7 @@
 
     <!-- question 10 -->
     <string name="ten" translatable="false">10</string>
-    <string name="q10">What is the appellation of origin of Châteauneuf-du-Pape wine?</string>
-    <string name="q10c1" translatable="false">Bordeaux</string>
-    <string name="q10c2" translatable="false">Bourgogne</string>
-    <string name="q10c3" translatable="false">Languedoc</string>
-    <string name="q10c4" translatable="false">côtes-du-Rhône</string>
-    <string name="reset">Reset</string>
-    <string name="quizzReseted">Quizz reseted!</string>
+    <string name="q10">Which french city the most famous vine is coming from?</string>
+    <string name="q10Answer" translatable="false">Bordeaux</string>
 
 </resources>

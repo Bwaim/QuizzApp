@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int NB_QUESTIONS = 10;
     private EditText m_usernameEditText;
+    private EditText m_q10Answer;
 
     /**
      * The send button listener
@@ -68,11 +69,14 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Construct the list of questions with radioButton
-            List<Integer> radioQuestions = Arrays.asList(2, 4, 5, 6, 7, 8, 9, 10);
+            List<Integer> radioQuestions = Arrays.asList(2, 4, 5, 6, 7, 8, 9);
 
             for (Integer questionNumber : radioQuestions) {
                 resetRadioQuestion(questionNumber);
             }
+
+            // reset the question 10
+            m_q10Answer.setText("");
 
             Toast.makeText(MainActivity.this, R.string.quizzReseted,
                     Toast.LENGTH_SHORT).show();
@@ -90,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Get all the needed views
         m_usernameEditText = findViewById(R.id.usernameEditText);
+        m_q10Answer = findViewById(R.id.q10Answer);
         Button sendButton = findViewById(R.id.sendButton);
         Button resetButton = findViewById(R.id.resetButton);
 
@@ -169,8 +174,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Question 10
-        if (checkAnswerRadioButton(10,
-                getResources().getIdentifier("q10c4", "id", getPackageName()))) {
+        String answer = m_q10Answer.getText().toString();
+        String goodAnswer = getString(R.string.q10Answer);
+        if (goodAnswer.equalsIgnoreCase(answer)) {
             nbRightAnswers++;
         }
 

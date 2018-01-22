@@ -41,10 +41,11 @@
     <string name="q9c2">L\'omelette aux cèpes</string>
     <string name="q9c3">La carpe poêlée</string>
     <string name="q9c4">Le canard à l\'orange</string>
-    <string name="q10">Quelle est l\'appellation d\'origine du vin de Châteauneuf-du-Pape?</string>
+    <string name="q10">De quelle ville française provient le vin le plus connu?</string>
     <string name="send">Envoyer</string>
     <string name="usernameEmpty">Pouvez-vous renseigner votre nom</string>
     <string name="resultMessage">Félicitations %1$s!\nVous avez %2$d bonnes réponses sur %3$d</string>
     <string name="reset">Effacer</string>
     <string name="quizzReseted">Quizz effacé!</string>
+    <string name="frenchCity">Ville Française</string>
 </resources>

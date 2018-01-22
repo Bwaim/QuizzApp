@@ -594,36 +594,14 @@
 
             </LinearLayout>
 
-            <RadioGroup
-                android:id="@+id/q10"
+            <EditText
+                android:id="@+id/q10Answer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/q10c1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q10c1" />
-
-                <RadioButton
-                    android:id="@+id/q10c2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q10c2" />
-
-                <RadioButton
-                    android:id="@+id/q10c3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q10c3" />
-
-                <RadioButton
-                    android:id="@+id/q10c4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q10c4" />
-
-            </RadioGroup>
+                android:layout_height="wrap_content"
+                android:hint="@string/frenchCity"
+                android:inputType="textCapWords"
+                android:maxLength="14"
+                android:textSize="@dimen/textSize" />
 
         </LinearLayout>
 
