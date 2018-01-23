@@ -14,6 +14,7 @@
         <!-- Override the default styles -->
         <item name="editTextStyle">@style/editText</item>
         <item name="checkboxStyle">@style/checkBox</item>
+        <item name="radioButtonStyle">@style/radioButton</item>
 
         <!-- Override default attribute -->
         <item name="android:dividerVertical">@drawable/divider_vertical</item>
@@ -34,6 +35,11 @@
 
     <!-- CheckBox style -->
     <style name="checkBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:paddingLeft">@dimen/checkBoxPadding</item>
+    </style>
+
+    <!-- Radio style-->
+    <style name="radioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:paddingLeft">@dimen/checkBoxPadding</item>
     </style>
 
