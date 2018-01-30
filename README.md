@@ -19,4 +19,4 @@ I choose a quizz about french gastronomy :bread:.
  * Use of OnClickListener
 
 ## Screenshots
-![Screen 1](/images/screenshot1.png) ![Screen 2](/images/screenshot2.png)
+<img src="/images/screenshot1.png" width="363" height="564"><img src="/images/screenshot2.png" width="363" height="564">
