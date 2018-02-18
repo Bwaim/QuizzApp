@@ -1,6 +1,6 @@
 # QuizApp
 ## Presentation
-This is the third project of the Google Developer Challenge Scholarship - Android Basics - 2017/2018.
+This is the third project of the Android Basics Nanodegree.
 The goal is to create an educational app that quizzes a user about a certain topic.
 I choose a quizz about french gastronomy :bread:.
 
