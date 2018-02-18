@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Question 10
-        String answer = myQ10Answer.getText().toString();
+        String answer = myQ10Answer.getText().toString().trim();
         String goodAnswer = getString(R.string.q10Answer);
         if (goodAnswer.equalsIgnoreCase(answer)) {
             nbRightAnswers++;
